@@ -22,7 +22,7 @@ const argv = require('yargs')
                 describe: 'Muestra la tabla en la consolaf'
             })
             .check((argv, options)=>{
-                if( isNaN(argv.b || argv.h) ){
+                if( isNaN(argv.b) ){
                     throw 'La base o rango tiene que ser un numero'
                 }
                 return true
